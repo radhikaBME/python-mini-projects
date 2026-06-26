@@ -2,11 +2,11 @@
 while True:
 	print(" ---Welcome to BMI calculator---")
 
-	name = ((input("Enter your Name : ")))
-	age = (int(input("Enter your age :")))
-	gender = ((input("Enter your Gender :"))) 
-	weight = (int(input("Enter your weight(in kg) : ")))
-	height = (float(input("Enter your Height(in cm) : ")))
+	name = input("Enter your Name : ")
+	age = int(input("Enter your age :"))
+	gender = input("Enter your Gender :") 
+	weight = int(input("Enter your weight(in kg) : "))
+	height = float(input("Enter your Height(in cm) : "))
 
 
 	height_meter = height / 100
@@ -16,10 +16,10 @@ while True:
 	print()
 	print("----------BMI REPORT----------")
 	print(f"Name    : {name}")
-	print(f"Age        : {age}")
+	print(f"Age     : {age}")
 	print(f"Gender  : {gender}")
 	print(f"Weight  : {weight}kg")
-	print(f"Height    : {height}cm")
+	print(f"Height  : {height}cm")
 	print(f"Your BMI is {bmi}")
 
 	if bmi < 18.5:
@@ -46,7 +46,7 @@ while True:
 	print("-----------------------------------")
 	print()
 
-	again = input(("Do you want to calculate another BMI report(yes or no)? "))
+	again = input("Do you want to calculate another BMI report(yes or no)? ")
 
 	if again.lower() == "no":
 		break
